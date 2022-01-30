@@ -28,19 +28,19 @@ const CryptoDetails = () => {
   const time = ['3h', '24h', '7d', '30d', '1y', '3m', '3y', '5y'];
 
   const stats = [
-    { title: 'Price to USD', value: `$ ${cryptoDetails.price && millify(cryptoDetails.price)}`, icon: <DollarCircleOutlined /> },
-    { title: 'Rank', value: cryptoDetails.rank, icon: <NumberOutlined /> },
-    { title: '24h Volume', value: `$ ${cryptoDetails['24hVolume'] && millify(cryptoDetails['24hVolume'])}`, icon: <ThunderboltOutlined /> },
-    { title: 'Market Cap', value: `$ ${cryptoDetails.marketCap && millify(cryptoDetails.marketCap)}`, icon: <DollarCircleOutlined /> },
-    { title: 'All-time-high', value: `$ ${millify(cryptoDetails.allTimeHigh.price)}`, icon: <TrophyOutlined /> },
+    { title: 'Price to USD', value: cryptoDetails.price ? `$ ${cryptoDetails.price && millify(cryptoDetails.price)}` : 'Not Available', icon: <DollarCircleOutlined /> },
+    { title: 'Rank', value: cryptoDetails.rank ? cryptoDetails.rank : 'Not Available', icon: <NumberOutlined /> },
+    { title: '24h Volume', value: cryptoDetails['24hVolume'] ? `$ ${cryptoDetails['24hVolume'] && millify(cryptoDetails['24hVolume'])}` : 'Not Available', icon: <ThunderboltOutlined /> },
+    { title: 'Market Cap', value: cryptoDetails.marketCap ? `$ ${cryptoDetails.marketCap && millify(cryptoDetails.marketCap)}` : 'Not Available', icon: <DollarCircleOutlined /> },
+    { title: 'All-time-high', value: cryptoDetails.allTimeHigh.price ? `$ ${millify(cryptoDetails.allTimeHigh.price)}`: 'Not Available', icon: <TrophyOutlined /> },
   ];
 
   const genericStats = [
-    { title: 'Number Of Markets', value: cryptoDetails.numberOfMarkets, icon: <FundOutlined /> },
-    { title: 'Number Of Exchanges', value: cryptoDetails.numberOfExchanges, icon: <MoneyCollectOutlined /> },
+    { title: 'Number Of Markets', value: cryptoDetails.numberOfMarkets ? cryptoDetails.numberOfMarkets : 'Not Available', icon: <FundOutlined /> },
+    { title: 'Number Of Exchanges', value: cryptoDetails.numberOfExchanges ? cryptoDetails.numberOfExchanges : 'Not Available', icon: <MoneyCollectOutlined /> },
     { title: 'Approved Supply', value: cryptoDetails.supply.confirmed ? <CheckOutlined /> : <StopOutlined />, icon: <ExclamationCircleOutlined /> },
-    { title: 'Total Supply', value: `$ ${millify(cryptoDetails.supply.total)}`, icon: <ExclamationCircleOutlined /> },
-    { title: 'Circulating Supply', value: `$ ${millify(cryptoDetails.supply.circulating)}`, icon: <ExclamationCircleOutlined /> },
+    { title: 'Total Supply', value: cryptoDetails.supply.total ? `$ ${millify(cryptoDetails.supply.total)}` : 'Not Available', icon: <ExclamationCircleOutlined /> },
+    { title: 'Circulating Supply', value: cryptoDetails.supply.circulating ? `$ ${millify(cryptoDetails.supply.circulating)}` : 'Not Available', icon: <ExclamationCircleOutlined /> },
   ];
 
   
