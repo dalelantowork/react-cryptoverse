@@ -377,3 +377,13 @@ width: 70%;
     padding: 20px;
     align-items: center;
 }
+
+.lineChart-Height {
+    height: 500px;
+}
+
+@media screen and (max-width: 800px){
+   .lineChart-Height {
+       height: 350px;
+   }  
+}
