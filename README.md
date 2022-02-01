@@ -1,7 +1,7 @@
 # Crypto App created using React JS and several APIs
-Ant Design used for design - (https://ant.design/) /
-React Redux / React Redux Toolkit used for API fetching and controls (https://redux-toolkit.js.org/) /
-React JS Front end hosted in netlify /
+Ant Design used for design - (https://ant.design/) \
+React Redux / React Redux Toolkit used for API fetching and controls - (https://redux-toolkit.js.org/) \
+React JS Front end hosted in netlify \
 
 Demo : https://dalelanto-cryptoverse.netlify.app/
 
