@@ -1,4 +1,11 @@
-# Getting Started with Create React App
+# Crypto App created using React JS and several APIs
+Ant Design used for design - (https://ant.design/) /
+React Redux / React Redux Toolkit used for API fetching and controls (https://redux-toolkit.js.org/) /
+React JS Front end hosted in netlify /
+
+Demo : https://dalelanto-cryptoverse.netlify.app/
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
