@@ -3,9 +3,9 @@ Ant Design used for design - (https://ant.design/) \
 React Redux / React Redux Toolkit used for API fetching and controls - (https://redux-toolkit.js.org/) \
 React JS Front end hosted in netlify \
 
-APIs used: 
+APIs used: \
 CoinRanking API \
-Bing News Search API \
+Bing News Search API 
 
 Demo : https://dalelanto-cryptoverse.netlify.app/
 
